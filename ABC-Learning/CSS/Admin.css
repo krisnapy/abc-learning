@@ -1,0 +1,57 @@
+
+#regis{
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+}
+.registration-box{
+    flex-direction: column;
+    display: flex;
+    height: 700px;
+    width: 600px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.5);
+}
+input{
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height:30px;
+}
+select{
+    width: 300px;
+    height: 30px;
+}
+.title{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100px;
+    text-transform: uppercase;
+}
+#checkbox1,#checkbox2,#check{
+    display: flex;
+    margin-top: 4.5px;
+    width: 20px;
+    height: 20px;
+}
+.gender{
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    height:100px;
+}
+#gender{
+    width: 25px;
+}
+#input{
+    display: flex;
+    flex-direction: column;
+}
+.thank{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: 700px;
+        text-transform: uppercase;
+}

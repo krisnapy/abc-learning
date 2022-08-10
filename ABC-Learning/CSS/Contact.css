@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* hero banner contact */
+
+.hero-contact{
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    background-image: linear-gradient( to top, rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.5)),url(../IMG/banner-contact.jpg);
+    background-position: center;
+}
+.contact-text{
+    height: 500px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+}
+.text-contact{
+    width: 50%;
+}
+/* end hero banner contact */
+
+.contact-us{
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-template-areas: 'contact1 contact2';
+    margin-top: -100px;
+    gap: 10px;
+}
+/* send massage */
+.contact{
+    display: grid;
+    grid-template-areas: '1 2';
+    height: 550px;
+    width: 550px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+.name-contact{
+    grid-area: 1;
+    text-align: left;
+    gap: 10px;
+}
+
+.name-contact{
+    font-size: 15px;
+}
+#fname,#lname{
+    width: 254px;
+}
+.text-input{
+    grid-area: 1;
+    display: flex;
+    font-size: 15px;
+    flex-direction: column;
+    text-align: left;
+}
+.social{
+    display: flex;
+}
+.fa{
+    display: grid;
+    grid-area: 1;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    padding: 7.5px;
+}
+.fa:hover{
+    opacity: 0.7;
+}
+.fa-facebook {
+    height: 25px;
+    width:25px;
+    background: #3B5998;
+    color: white;
+}
+.fa-phone{
+    display: block;
+}
+.end{
+    justify-content: end;
+    align-items: end;
+    display: flex;
+    height: 320px;
+    margin-left: -20px;
+}
+.send{
+    font-size: 12px;
+    width: 80px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 2px black solid;
+}
+.send:hover{
+    background-color: midnightblue;
+    box-shadow: 0 5px 5px rgba(0,0,0,1)
+}
+/* Maps
+--------------- */
+.maps{
+    display: flex;
+    width: 550px;
+    height: 550px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 1);
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+}
+iframe{
+    height: 85%;
+    width: 85%;
+}
+@media (max-width:800px) {
+    .contact-us{
+        grid-template-areas: 'contact1';
+    }
+    main{
+        height: 1200px;
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Admin Register
+    </title>
+    <link rel="stylesheet" href="/CSS/Admin.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="register.js"></script>
+</head>
+
+<body onload="showAll()">
+    <div class="registration-box">
+        <h1>USER DATA INPUT</h1>
+        <form id="userDetails" name="userDetails" method="get" onsubmit="window.location.reload()">
+            <div>
+                <label>User's Name</label> <br>
+                <input type="text" name="name" id="name" class="field">
+            </div>
+            <div>
+                <label>User's Email</label> <br>
+                <input type="email" name="email" id="email" class="field">
+            </div>
+          <div>
+              <label>User's Password </label><br>
+              <input type="text" name="password" id="password" class="field"><br>
+          </div>
+          <div class="gender">
+              <label>User's Gender :</label>
+              <input type="radio" name="gender" value="male" id="gender"><p>Male</p>
+              <input type="radio" name="gender" value="female" id="gender"><p>Female</p>
+          </div>
+          <div>
+              <label>User's Selected Courses</label> <br>
+              <select name="course" id="courses" required="" class="courses">
+                  <optgroup label="Courses">
+                      <option value="HTML">HTML</option>
+                      <option value="Java">Java</option>
+                      <option value="NET">NET</option>
+                      <option value="msoffice">Microsoft Office Training</option>
+                  </optgroup>
+              </select>
+          </div>
+          <div class="form-action-buttons">
+            <input type="button" class="btn-submit" id="addBtn" value="Add" onclick="addDataAdmin()">
+            <input style="display: none;" type="button" class="btn-submit" id="updateBtn" value="Update"
+            onclick="updateData()">
+        </div>
+          </div>
+      </form>
+      </div>
+    <div id="items_table">
+        <h2>Data Details</h2>
+        <table id="list" class="list"></table>
+        <p>
+            <label>
+                <input type="button" class="click" value="Delete All" onclick="clearAll()">
+        </p>
+    </div> <!-- items_table -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+body{
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: linear-gradient( to top, rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.5)),url(../IMG/regis.png);
+}
+a.navbar-brand{
+    font-family: 'Viga', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+}
+.navbar-nav{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: auto;
+}
+.nav-link:hover::after{
+    content: ' ';
+    display: block;
+    border-bottom: 3px #0B63DC solid;
+    width: 60%;
+    margin:auto;
+    margin-bottom: -3px;
+}
+#regis{
+    align-items: center;
+    justify-content: center;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+}
+.registration-box{
+    border-radius: 20px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    width: 600px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.5);
+}
+#Reg-Title{
+    top: -50px;
+    position: relative;
+    font-family: 'Viga', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+}
+input{
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height:30px;
+}
+select{
+    width: 400px;
+    height: 30px;
+}
+.title{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100px;
+    text-transform: uppercase;
+}
+.checkbox{
+    display: flex;
+    flex-direction: row;
+}
+.gender{
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    height:40px;
+}
+#gender{
+    width: 15px;
+    margin-top: -2px;
+}
+#input{
+    display: flex;
+    flex-direction: column;
+}
+.reg{
+    height: 40px;
+    width: 200px;
+    border-radius: 15px;
+    font-family: 'Roboto', sans-serif;
+    border:2px rgb(41, 41, 41) solid;
+    background-color: transparent;
+    cursor: pointer;
+    color: rgb(41, 41, 41);
+    font-size: 20px;
+    font-weight: 600;
+}
+.reg:hover{
+    border:2px white solid;
+    color: white;
+    background-color: midnightblue;
+    box-shadow: 0 2.5px 2.5px rgba(0,0,0,0.5)
+}
+.thank{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 700px;
+    text-transform: uppercase;
+}
+.form-action-buttons{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100px;
+}
+.error{
+    color:red;
+}
